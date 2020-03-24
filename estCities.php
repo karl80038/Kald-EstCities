@@ -2,10 +2,10 @@
     require_once ('config.php');
     if (isset($_REQUEST["value"]))
     {
-        $command = $dbConnection -> prepare("INSERT INTO arvud(arv1, arv2) VALUES (?,?)");
+        $command = $dbConnection -> prepare("INSERT INTO game(question, answer, usrAnswer) VALUES (?,?,?)");
     
         //Anname käsu päringutele parameetrid
-        $command -> bind_param("ss", $_REQUEST["a1"], $_REQUEST["a2"]);
+        $command -> bind_param("sss", $_REQUEST[$question], $_REQUEST[$answer], $_REQUEST["value"]);
     
         //Käivitame käsu
         $command -> execute();
