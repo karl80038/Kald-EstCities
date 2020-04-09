@@ -1,0 +1,103 @@
+/* © Karl-Erik Kald. All rights reserved. */
+html {
+    min-height: 100%;
+}
+h1 {
+    margin-top: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-left: 1em;
+}
+form {
+    margin-left: 2em;
+    font-size: large;
+}
+header, footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: inline-block;
+    padding-left: 1em;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background-color: darkblue;
+
+}
+ #info {
+    margin-left: 2em;
+}
+img {
+    height: 100%;
+    float: left;
+}
+footer {
+    bottom: 0px;
+}
+header {
+    top: 0px;
+}
+header h1 {
+    margin-top: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    float: left;
+}
+footer h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    padding-top: 10vh;
+    height: 100%;
+
+    padding-bottom: 17vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    position: relative;
+    /*
+    margin-left: 160px;
+    */
+   /* padding: 0px 2px;*/
+}
+table {
+    background-color: darkblue;
+    
+    margin-left: 2em;
+}
+
+th {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: large;
+    color: beige;
+
+}
+
+td {
+    background-color: aliceblue;
+    border: solid 0px black;
+
+}
+input[type=submit]{
+    background-color: darkblue;
+    border: solid 1px darkblue;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    padding: 13px;
+}
+input[type=submit]:hover{
+    background-color: lightblue;
+    border: solid 1px lightblue;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}

@@ -8,29 +8,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
     <title>Arvamismäng Kald</title>
 </head>
 <body>
     <?php
 
+        include("header.php");
+        include_once("footer.php");
 
         $city1 = "Tallinn";
         $city2 = "Tartu";
         $city3 = "Pärnu";
         $city4 = "Narva";
         $city5 = "Haapsalu";
-        $question1 = substr($city1, 1, strlen($city1));
-        $question2 = substr($city2, 1, strlen($city1));
-        $question3 = substr($city3, 1, strlen($city1));
-        $question4 = substr($city4, 1, strlen($city1));
-        $question5 = substr($city5, 1, strlen($city1));
+        $question1 = "_" . substr($city1, 1, strlen($city1));
+        $question2 = "_" .substr($city2, 1, strlen($city1));
+        $question3 = "_" .substr($city3, 1, strlen($city1));
+        $question4 = "_" .substr($city4, 1, strlen($city1));
+        $question5 = "_" .substr($city5, 1, strlen($city1));
         echo "<h1>Mis on järgnevate linnade esimene täht?</h1>";
         echo "<br>";
-        echo "Sisestage ainult algustäht. Sisestatud täht võib olla kirjutatud kas suure tähega või väikse tähega.";
+        echo "<div id='info'>Sisestage ainult algustäht. Sisestatud täht võib olla kirjutatud nii suure tähega või väikse tähega.</div>";
     ?>
     <br><br>
     <form action="estCities.php">
-            <?php echo $question1; ?>
+            <?php echo $question1;?>
             <br>
             Minu vastus: <input type = "text" name="txt1">
             <br>
@@ -176,8 +180,11 @@
             echo        "<td>" .$d1."</td>";
             echo     "</tr>";
         }
+
         ?>
         <table>
+    <?php
 
+    ?>
 </body>
 </html>
